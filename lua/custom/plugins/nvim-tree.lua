@@ -12,6 +12,11 @@ return {
     },
     config = function()
       require('nvim-tree').setup {}
+      vim.api.nvim_create_autocmd('VimEnter', {
+        callback = function()
+          vim.cmd 'NvimTreeToggle'
+        end,
+      })
     end,
   },
 }
