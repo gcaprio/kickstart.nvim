@@ -1033,3 +1033,6 @@ vim.opt.termguicolors = true
 
 -- empty setup using defaults
 require('nvim-tree').setup()
+
+-- custom keymaps
+require 'custom.keymaps'
